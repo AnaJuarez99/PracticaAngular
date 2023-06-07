@@ -1,0 +1,9 @@
+<h2>Listado de Empresas</h2>
+<div *ngIf="! empresas.length">No hay Empresas!</div>
+<div>
+    <article *ngFor="let empresa of empresas">
+        <span>{{empresa.nombre}}</span>
+        <span>{{empresa.descripcion}}</span>
+        <span>{{empresa.website}}</span>
+    </article>
+</div>
